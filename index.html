@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link a mi css-->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!--Link a Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title>Entrega-final-jonathanFernandez</title>
+</head>
+
+<body>
+
+    <h1>CÁLCULOS PARA AREAS <span>DE</span> CUADRADOS, TRIANGULOS <span>Y</span> CIRCUNFERENCIAS</h1>
+
+    <div class="areas">
+
+        <div class="areaTriangulo">
+            <div class="imgTriangulo">
+                <img src="img/formula-triangulo.jpg" class="triangulo" alt="imagen de un trinagulo">
+            </div>
+            <p>Ingrese la medida (metros) de la base del triangulo </p>
+            <input type="text" id="base" placeholder="Base" required>
+            <p>Ingrese la medida (metros) de la base del triangulo </p>
+            <input type="text" id="altura" placeholder="Altura" required>
+            <button id="btnTriangulo">CALCULAR AREA</button>
+            <button id="borrarTriangulo">BORRAR</button>
+            <div id="pantalla">0</div>
+            <button id="mostrarResultadosTriangulo">Mostrar areas calculadas</button>
+            <p>Areas Calculadas en m2</p>
+            <div id="segundaPantalla"></div>
+        </div>
+
+        <div class="areaCuadrado">
+            <div class="imgCuadrado">
+                <img src="img/perimetro-de-un-cuadrado.jpg" class="cuadrado" alt="imagen de un cudrado">
+            </div>
+            <p>Ingrese la medida (metros) del lado del cuadrado </p>
+            <input type="text" id="lados" placeholder="Medida de uno de los lados" required>
+            <button id="btnCuadrado">CALCULAR AREA</button>
+            <button id="borrarCuadrado">BORRAR</button>
+            <div id="pantallaCuadrado">0</div>
+            <button id="mostrarResultadosCuadrado">Mostrar areas calculadas</button>
+            <p>Areas Calculadas en m2</p>
+            <div id="segundaPantallaC"></div>
+        </div>
+
+        <div class="areaCirculo">
+            <div class="imgCirculo">
+                <img src="img/radio-de-un-circulo-1.jpg" class="circulo" alt="imagen de un circulo">
+            </div>
+            <p>Ingrese la medida (metros) del radio del circulo </p>
+            <input type="text" id="radio" placeholder="Medida del radio" required>
+            <button id="btnCirculo">CALCULAR AREA</button>
+            <button id="borrarCirculo">BORRAR</button>
+            <div id="pantallaCirculo">0</div>
+            <button id="mostrarResultadosCirculo">Mostrar areas calculadas</button>
+            <p>Areas Calculadas en m2</p>
+            <div id="segundaPantallaCirculo"></div>
+        </div>
+    </div>
+
+    <div class="info">
+        <button id="btnInfo">Información Importante</button>
+        <ul id="infoMetro">
+
+        </ul>
+    </div>
+
+    <footer>
+        <h2>Todos los derechos reservados</h2>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script/triangulo.js"></script>
+    <script src="./script/cuadrado.js"></script>
+    <script src="./script/circulo.js"></script> 
+    <script src="./js/botonInfo.js"></script>   
+    
+</body>
+
+</html>
